@@ -1,15 +1,17 @@
 * {
   color: white;
   background-color: rgb(34, 37, 59);
+  letter-spacing: 1px;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  background-color: transparent;
 }
 
+/* layout */
 .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3% 28% auto 9%;
   grid-area: 'nav' 'header' 'main' 'footer';
-  border: 2px solid orange;
   height: 1610px;
 }
 
@@ -33,23 +35,26 @@
 .footer {
   grid-area: 'footer';
   /* border: 1px solid red; */
+  background-color: rgb(34, 37, 59);
 }
 
 .nav {
   display: flex;
+  padding: 10px;
   justify-content: space-between;
 }
 
 .nav-item {
   font-size: 12.8px;
-  font-weight: 1000;
+  font-weight: 500;
+  letter-spacing: 4px;
   padding: 12.8px;
 }
 
 .intro {
   font-size: 40px;
-  font-weight: 400;
-  margin-top: 145px;
+  font-weight: bold;
+  margin-top: 120px;
   margin-left: 100px;
   background: none;
 }
@@ -62,7 +67,7 @@
 }
 
 .intro-text {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 30px;
   margin-top: 30px;
@@ -73,13 +78,20 @@
 
 .get-started {
   border: 2px solid white;
-  padding: 6px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   background: none;
 }
 
 .know-more {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-top: 30px;
   margin-left: 100px;
   background: none;
@@ -113,12 +125,14 @@
 
 .post-one {
   padding: 80px;
+  padding-top: 100px;
   background-color: rgb(237, 185, 194);
   width: 60%;
 }
 
 .post-two {
   padding: 80px;
+  padding-top: 100px;
   background-color: rgb(172, 226, 219);
   width: 40%;
 }
@@ -129,6 +143,7 @@
 
 .post-three {
   padding: 80px;
+  padding-top: 100px;
   background-color: rgb(236, 205, 152);
   width: 100%;
 }
@@ -139,41 +154,53 @@
 
 .post-four {
   padding: 80px;
+  padding-top: 100px;
   background-color: rgb(134, 191, 164);
-  width: 40%;
+  width: 50%;
 }
 
 .post-five {
   padding: 80px;
+  padding-top: 100px;
   background-color: rgb(161, 198, 246);
-  width: 60%;
+  width: 50%;
 }
 
 .post-header {
-  font-size: 35px;
-  font-weight: 600px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .post-break-line {
   height: solid 3p;
-  color:red;
+  color: red;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.post-intro{
+.post-intro {
   font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-weight: 8px;
+  line-height: 20px;
+}
+.icon {
+  height: 20px;
+}
+.icons {
+  padding: 8px;
 }
 
-
+.down{
+  color: #F4F4FF33;
+  margin-left: 80px;
+  margin-top: 80px;
+}
 
 a {
   text-decoration: none;
 }
 
 a:hover {
-  color: aqua;
+  color:aqua;
 }
