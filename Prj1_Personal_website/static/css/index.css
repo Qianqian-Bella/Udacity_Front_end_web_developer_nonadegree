@@ -46,7 +46,7 @@
 
 .nav-item {
   font-size: 12.8px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 4px;
   padding: 12.8px;
 }
@@ -92,7 +92,7 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 100px;
   background: none;
 }
@@ -184,17 +184,28 @@
   font-weight: 8px;
   line-height: 20px;
 }
-.icon {
-  height: 20px;
-}
+
+
+
 .icons {
-  padding: 8px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.fab{
+  width: 50px;
+  font-size: 30px;
 }
 
 .down{
   color: #F4F4FF33;
   margin-left: 80px;
-  margin-top: 80px;
+  margin-top: 40px;
+}
+
+.back{
+  color: #F4F4FF33;
+  border-bottom: 1px #F4F4FF33 dotted
 }
 
 a {
