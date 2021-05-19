@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3% 28% auto 10%;
+  grid-template-rows: 3% 28% auto 9%;
   grid-area: 'nav' 'header' 'main' 'footer';
   border: 2px solid orange;
   height: 1610px;
@@ -16,44 +16,45 @@
 .nav {
   grid-area: 'nav';
   background-color: rgb(34, 37, 59);
+  /* border: 1px solid red; */
 }
 
 .header {
   grid-area: 'header';
   background-color: rgb(34, 37, 59);
-  background-image: url('../images/banner.jpg');
-  opacity: 0.5;
+  /* border: 1px solid red; */
 }
 
 .main {
   grid-area: 'main';
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .footer {
   grid-area: 'footer';
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-item {
   font-size: 12.8px;
+  font-weight: 1000;
   padding: 12.8px;
 }
 
 .intro {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 145px;
   margin-left: 100px;
   background: none;
 }
 
-hr {
+.intro-break-line {
   height: solid 3px;
   margin-top: 30px;
   margin-left: 100px;
@@ -83,6 +84,91 @@ hr {
   margin-left: 100px;
   background: none;
 }
+
+.main {
+  display: grid;
+  /* border: 1px solid red; */
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  grid-area: 'line-one' 'line-two' 'line-three';
+}
+
+.line-one {
+  grid-area: 'line-one';
+  /* border: 1px solid red; */
+}
+
+.line-two {
+  grid-area: 'line-two';
+  /* border: 1px solid red; */
+}
+
+.line-three {
+  grid-area: 'line-three';
+  /* border: 1px solid red; */
+}
+
+.line-one {
+  display: flex;
+}
+
+.post-one {
+  padding: 80px;
+  background-color: rgb(237, 185, 194);
+  width: 60%;
+}
+
+.post-two {
+  padding: 80px;
+  background-color: rgb(172, 226, 219);
+  width: 40%;
+}
+
+.line-two {
+  display: flex;
+}
+
+.post-three {
+  padding: 80px;
+  background-color: rgb(236, 205, 152);
+  width: 100%;
+}
+
+.line-three {
+  display: flex;
+}
+
+.post-four {
+  padding: 80px;
+  background-color: rgb(134, 191, 164);
+  width: 40%;
+}
+
+.post-five {
+  padding: 80px;
+  background-color: rgb(161, 198, 246);
+  width: 60%;
+}
+
+.post-header {
+  font-size: 35px;
+  font-weight: 600px;
+}
+
+.post-break-line {
+  height: solid 3p;
+  color:red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post-intro{
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 8px;
+}
+
+
 
 a {
   text-decoration: none;
