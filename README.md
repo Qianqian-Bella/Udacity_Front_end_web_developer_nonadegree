@@ -4,3 +4,6 @@
 
 HTML CSS
 
+## Project2 Landing Page
+
+DOM Event
