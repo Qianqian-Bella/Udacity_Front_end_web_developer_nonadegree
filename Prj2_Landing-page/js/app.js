@@ -42,7 +42,7 @@ function buildNav() {
     const sectionDataNav = section.dataset.nav;
 
     const li = document.createElement('li');
-    const liContent = `<a class="menu__link" href="#${sectionId}">${sectionDataNav}</a>`;
+    const liContent = `<a class="menu__link" href="#${sectionId}" id= "${sectionId}__link">${sectionDataNav}</a>`;
 
     li.innerHTML = liContent;
     ul.appendChild(li);
@@ -58,13 +58,22 @@ function buildNav() {
 }
 
 // Add class 'active' to section when near top of viewport
-function setSectionActive() {
+function setActive() {
   sections.forEach((section) => {
     const bounding = section.getBoundingClientRect();
-    if (bounding.top > 0) {
-      section.classList.add('your-active-class');
+    const sectionId = section.id;
+    if (bounding.y <= 180 && bounding.bottom >= 150) {
+      section.classList.add('active');
+      const navs = document.querySelectorAll('.menu__link');
+      navs.forEach((nav) => {
+        if (nav.id === `${sectionId}__link`) {
+          nav.classList.add('active');
+        } else {
+          nav.classList.remove('active');
+        }
+      });
     } else {
-      section.classList.remove('your-active-class');
+      section.classList.remove('active');
     }
   });
 }
@@ -79,4 +88,4 @@ function setSectionActive() {
 buildNav();
 
 // Set sections as active
-window.addEventListener('scroll', setSectionActive);
+document.addEventListener('scroll', setActive);

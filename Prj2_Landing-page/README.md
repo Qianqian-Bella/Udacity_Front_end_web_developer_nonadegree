@@ -1,13 +1,10 @@
 # Landing Page Project
 
-## Table of Contents
+## Description
 
-* [Instructions](#instructions)
+The Landing Page project is required to convert the starter project from a static project to an interactive one.
 
-## Instructions
+- Navigation is built dynamically as an unordered list.
+- `scroll` functionality: when clicking an item from the navigation menu, the link scroll to the corresponding section.
+-  `highlight` functionality: while scrolling through the page, section being viewed is highlighted both around the section and in the nav bar.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
